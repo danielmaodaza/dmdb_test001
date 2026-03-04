@@ -1,4 +1,4 @@
-<table>
+<!-- <table>
 <colgroup>
 <col style="width: 23%" />
 <col style="width: 51%" />
@@ -14,13 +14,19 @@
 </thead>
 <tbody>
 </tbody>
-</table>
+</table> -->
+
+# 5. A05: Injection (Ineyección)
+Ejecución de comandos maliciosos por datos no validados → ⚠ CRÍTICO
+
 
 ## 📋 Descripción de la Vulnerabilidad
 
 ### 🎯 ¿Qué es?
 
 Ocurre cuando datos no confiables son enviados a un intérprete como parte de un comando o consulta. El atacante puede engañar al interprete para que ejecute comandos no intencionados o acceda a datos sin autorización.
+
+<img src="./images/A05_Injection.png" width=500)/>
 
 ### ⚙️ ¿Cómo funciona?
 
@@ -42,7 +48,7 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 - Bypass de autenticación y autorización
 
-- Remote Code Execution (RCE) â€” control total del servidor
+- Remote Code Execution (RCE) → control total del servidor
 
 - Escalamiento de privilegios y destrucción de información
 
@@ -233,6 +239,7 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 ## 
 
+<!--
 <table>
 <colgroup>
 <col style="width: 23%" />
@@ -250,12 +257,19 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 <tbody>
 </tbody>
 </table>
+-->
+
+# 6. A06 Insecure Design (Diseño Inseguro)
+Fallas estructurales de arquitectura desde el origen → ⚠ ALTO
+
 
 ## 📋 Descripción de la Vulnerabilidad
 
 ### 🎯 ¿Qué es?
 
 Falla estructural: la arquitectura del sistema no contempla amenazas ni requisitos de seguridad desde el inicio. A diferencia de otras vulnerabilidades, NO puede corregirse con una buena implementación: si el diseño es defectuoso, el sistema es inseguro por naturaleza.
+
+<img src="./images/A06_InsecureDesign.png" width=400)/>
 
 ### ⚙️ ¿Cómo funciona?
 
@@ -467,7 +481,7 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 
 ## 
 
-<table>
+<!-- <table>
 <colgroup>
 <col style="width: 23%" />
 <col style="width: 51%" />
@@ -484,12 +498,20 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 <tbody>
 </tbody>
 </table>
+-->
+
+
+# 9. A09 Security Logging & Alerting Failures (Fallos en el registro y las alertas de seguridad)
+El silencio es la peor respuesta ante un ataque → ⚠ MEDIO-ALTO
+
 
 ## 📋 Descripción de la Vulnerabilidad
 
 ### 🎯 ¿Qué es?
 
 Ausencia o insuficiencia de logs de seguridad, monitoreo de eventos críticos y alertas ante comportamientos anómalos. Sin visibilidad, los atacantes pueden operar durante meses sin ser detectados.
+
+<img src="./images/A09-SecurityLogging_Alerting Failures.png" width=400)/>
 
 ### ⚙️ ¿Cómo funciona?
 
