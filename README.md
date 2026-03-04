@@ -50,7 +50,7 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 > *SQL Injection · NoSQL Injection (MongoDB \$where) · OS Command Injection · LDAP Injection · Server-Side Template Injection (SSTI) · Log4Shell (JNDI via strings de log)*
 
- <img src="./images/image001.png" style="width:7.14029in;height:1.2in" />
+ <img src="./images/image001.png"/>
 
 ## ⚔️ Métodos de Explotación
 
