@@ -6,10 +6,10 @@
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><strong>A05</strong></th>
-<th><p><strong>Inyección</strong></p>
+<th style="text-align: center;"><H1>A05</th>
+<th><p><H1>Inyección</p>
 <p>Ejecución de comandos maliciosos por datos no validados</p></th>
-<th style="text-align: center;"><strong>⚠ CRÍTICO</strong></th>
+<th style="text-align: center;"><H1>⚠ CRÍTICO</th>
 </tr>
 </thead>
 <tbody>
@@ -50,7 +50,7 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 > *SQL Injection · NoSQL Injection (MongoDB \$where) · OS Command Injection · LDAP Injection · Server-Side Template Injection (SSTI) · Log4Shell (JNDI via strings de log)*
 
-<img src="./media/image1.png" style="width:7.14029in;height:1.2in" />
+ <img src="./images/image001.png" style="width:7.14029in;height:1.2in" />
 
 ## ⚔️ Métodos de Explotación
 
@@ -66,7 +66,7 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 ### 🔴 Ejemplos Reales
 
-<table style="width:87%;">
+<table style="width:67%;">
 <colgroup>
 <col style="width: 29%" />
 <col style="width: 56%" />
@@ -79,20 +79,20 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 </thead>
 <tbody>
 <tr>
-<td><h3 id="equifax-2017">Equifax (2017)</h3></td>
-<td><h3 id="sqli-147m-registros-robados">SQLi → 147M registros robados</h3></td>
+<td><h4 id="equifax-2017">Equifax (2017)</h3></td>
+<td><h4 id="sqli-147m-registros-robados">SQLi → 147M registros robados</h3></td>
 </tr>
 <tr>
-<td><h3 id="log4shell-2021">Log4Shell (2021)</h3></td>
-<td><h3 id="jndi-injection-rce-masivo-en-infraestructura-cloud-global">JNDI injection → RCE masivo en infraestructura Cloud global</h3></td>
+<td><h4 id="log4shell-2021">Log4Shell (2021)</h3></td>
+<td><h4 id="jndi-injection-rce-masivo-en-infraestructura-cloud-global">JNDI injection → RCE masivo en infraestructura Cloud global</h3></td>
 </tr>
 <tr>
-<td><h3 id="capital-one-2019">Capital One (2019)</h3></td>
-<td><h3 id="ssrf-os-command-injection-en-aws-100m-clientes-expuestos">SSRF + OS Command Injection en AWS → 100M+ clientes expuestos</h3></td>
+<td><h4 id="capital-one-2019">Capital One (2019)</h3></td>
+<td><h4 id="ssrf-os-command-injection-en-aws-100m-clientes-expuestos">SSRF + OS Command Injection en AWS → 100M+ clientes expuestos</h3></td>
 </tr>
 <tr>
-<td><h3 id="heartland-2008">Heartland (2008)</h3></td>
-<td><h3 id="sql-injection-en-producción-130-millones-de-tarjetas-robadas">SQL Injection en producción → 130 millones de tarjetas robadas</h3></td>
+<td><h4 id="heartland-2008">Heartland (2008)</h3></td>
+<td><h4 id="sql-injection-en-producción-130-millones-de-tarjetas-robadas">SQL Injection en producción → 130 millones de tarjetas robadas</h3></td>
 </tr>
 </tbody>
 </table>
@@ -137,37 +137,37 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 - Escaneo de IaC: validar Terraform/CloudFormation con Checkov/tfsec
 
-  <img src="./media/image2.png" style="width:5.04078in;height:2.2in" />
+  <img src="./images/image003.png"/>
 
 ## ⚙️ Configuraciones Recomendadas
 
-<table style="width:87%;">
+<table style="width:67%;">
 <colgroup>
 <col style="width: 29%" />
 <col style="width: 56%" />
 </colgroup>
 <thead>
 <tr>
-<th><h2 id="área">Área</h2></th>
-<th><h2 id="configuración">Configuración</h2></th>
+<th><h3 id="área">Área</h2></th>
+<th><h3 id="configuración">Configuración</h2></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h2 id="cicd-pipeline">CI/CD Pipeline</h2></td>
-<td><h2 id="semgrep-con-ruleset-powasp-top-ten.-bloqueo-automático-ante-hallazgos-críticos">Semgrep con ruleset p/owasp-top-ten. Bloqueo automático ante hallazgos críticos</h2></td>
+<td><h4 id="cicd-pipeline">CI/CD Pipeline</h2></td>
+<td><h4 id="semgrep-con-ruleset-powasp-top-ten.-bloqueo-automático-ante-hallazgos-críticos">Semgrep con ruleset p/owasp-top-ten. Bloqueo automático ante hallazgos críticos</h2></td>
 </tr>
 <tr>
-<td><h2 id="waf-cloud">WAF Cloud</h2></td>
-<td><h2 id="aws-waf-con-awsmanagedrulescommonruleset-en-modo-prevention-activo">AWS WAF con AWSManagedRulesCommonRuleSet en modo Prevention activo</h2></td>
+<td><h4 id="waf-cloud">WAF Cloud</h2></td>
+<td><h4 id="aws-waf-con-awsmanagedrulescommonruleset-en-modo-prevention-activo">AWS WAF con AWSManagedRulesCommonRuleSet en modo Prevention activo</h2></td>
 </tr>
 <tr>
-<td><h2 id="base-de-datos">Base de Datos</h2></td>
-<td><h2 id="usuarios-con-permisos-mínimos.-disable-xp_cmdshell-en-mssql.-timeouts-de-consulta">Usuarios con permisos mínimos. Disable xp_cmdshell en MSSQL. Timeouts de consulta</h2></td>
+<td><h4 id="base-de-datos">Base de Datos</h2></td>
+<td><h4 id="usuarios-con-permisos-mínimos.-disable-xp_cmdshell-en-mssql.-timeouts-de-consulta">Usuarios con permisos mínimos. Disable xp_cmdshell en MSSQL. Timeouts de consulta</h2></td>
 </tr>
 <tr>
-<td><h2 id="secrets-manager">Secrets Manager</h2></td>
-<td><h2 id="variables-sensibles-en-aws-secrets-manager-hashicorp-vault-nunca-hardcodeadas">Variables sensibles en AWS Secrets Manager / HashiCorp Vault, nunca hardcodeadas</h2></td>
+<td><h4 id="secrets-manager">Secrets Manager</h2></td>
+<td><h4 id="variables-sensibles-en-aws-secrets-manager-hashicorp-vault-nunca-hardcodeadas">Variables sensibles en AWS Secrets Manager / HashiCorp Vault, nunca hardcodeadas</h2></td>
 </tr>
 </tbody>
 </table>
@@ -176,7 +176,7 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 
 ## 🔒 Controles de Seguridad
 
-<table style="width:87%;">
+<table style="width:67%;">
 <colgroup>
 <col style="width: 29%" />
 <col style="width: 15%" />
@@ -185,48 +185,48 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 </colgroup>
 <thead>
 <tr>
-<th><h2 id="control">Control</h2></th>
-<th><h2 id="tipo">Tipo</h2></th>
-<th><h2 id="herramienta">Herramienta</h2></th>
-<th><h2 id="prioridad">Prioridad</h2></th>
+<th><h3 id="control">Control</h2></th>
+<th><h3 id="tipo">Tipo</h2></th>
+<th><h3 id="herramienta">Herramienta</h2></th>
+<th><h3 id="prioridad">Prioridad</h2></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h2 id="prepared-statements-orm">Prepared Statements / ORM</h2></td>
-<td><h2 id="preventivo">Preventivo</h2></td>
-<td><h2 id="hibernate-sqlalchemy">Hibernate, SQLAlchemy</h2></td>
-<td><h2 id="crítico">CRÍTICO</h2></td>
+<td><h4 id="prepared-statements-orm">Prepared Statements / ORM</h2></td>
+<td><h4 id="preventivo">Preventivo</h2></td>
+<td><h4 id="hibernate-sqlalchemy">Hibernate, SQLAlchemy</h2></td>
+<td><h4 id="crítico">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="sast-en-pipeline-cicd">SAST en pipeline CI/CD</h2></td>
-<td><h2 id="detectivo">Detectivo</h2></td>
-<td><h2 id="semgrep-sonarqube">Semgrep, SonarQube</h2></td>
-<td><h2 id="crítico-1">CRÍTICO</h2></td>
+<td><h4 id="sast-en-pipeline-cicd">SAST en pipeline CI/CD</h2></td>
+<td><h4 id="detectivo">Detectivo</h2></td>
+<td><h4 id="semgrep-sonarqube">Semgrep, SonarQube</h2></td>
+<td><h4 id="crítico-1">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="waf-con-reglas-owasp">WAF con reglas OWASP</h2></td>
-<td><h2 id="preventivo-1">Preventivo</h2></td>
-<td><h2 id="aws-waf-modsecurity">AWS WAF, ModSecurity</h2></td>
-<td><h2 id="alto">ALTO</h2></td>
+<td><h4 id="waf-con-reglas-owasp">WAF con reglas OWASP</h2></td>
+<td><h4 id="preventivo-1">Preventivo</h2></td>
+<td><h4 id="aws-waf-modsecurity">AWS WAF, ModSecurity</h2></td>
+<td><h4 id="alto">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="dast-en-staging">DAST en staging</h2></td>
-<td><h2 id="detectivo-1">Detectivo</h2></td>
-<td><h2 id="owasp-zap-burp-suite">OWASP ZAP, Burp Suite</h2></td>
-<td><h2 id="alto-1">ALTO</h2></td>
+<td><h4 id="dast-en-staging">DAST en staging</h2></td>
+<td><h4 id="detectivo-1">Detectivo</h2></td>
+<td><h4 id="owasp-zap-burp-suite">OWASP ZAP, Burp Suite</h2></td>
+<td><h4 id="alto-1">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="input-validation-library">Input Validation Library</h2></td>
-<td><h2 id="preventivo-2">Preventivo</h2></td>
-<td><h2 id="esapi-validator.js">ESAPI, Validator.js</h2></td>
-<td><h2 id="alto-2">ALTO</h2></td>
+<td><h4 id="input-validation-library">Input Validation Library</h2></td>
+<td><h4 id="preventivo-2">Preventivo</h2></td>
+<td><h4 id="esapi-validator.js">ESAPI, Validator.js</h2></td>
+<td><h4 id="alto-2">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="mínimo-privilegio-en-bd">Mínimo privilegio en BD</h2></td>
-<td><h2 id="preventivo-3">Preventivo</h2></td>
-<td><h2 id="iam-roles-db-users">IAM Roles, DB Users</h2></td>
-<td><h2 id="medio">MEDIO</h2></td>
+<td><h4 id="mínimo-privilegio-en-bd">Mínimo privilegio en BD</h2></td>
+<td><h4 id="preventivo-3">Preventivo</h2></td>
+<td><h4 id="iam-roles-db-users">IAM Roles, DB Users</h2></td>
+<td><h4 id="medio">MEDIO</h2></td>
 </tr>
 </tbody>
 </table>
@@ -241,10 +241,10 @@ El input del usuario se concatena directamente en queries SQL, comandos OS, LDAP
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><strong>A06</strong></th>
-<th><p><strong>Diseño Inseguro</strong></p>
+<th style="text-align: center;"><H1>A06</th>
+<th><p><H1>Diseño Inseguro</p>
 <p>Fallas estructurales de arquitectura desde el origen</p></th>
-<th style="text-align: center;"><strong>⚠ ALTO</strong></th>
+<th style="text-align: center;"><H1>⚠ ALTO</th>
 </tr>
 </thead>
 <tbody>
@@ -281,7 +281,7 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 
 - Fraudes en plataformas Cloud con impacto financiero severo
 
-<img src="./media/image3.png" style="width:3.81501in;height:4in" />
+<img src="./images/image005.png"/>
 
 ## ⚔️ Métodos de Explotación
 
@@ -312,20 +312,20 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 </thead>
 <tbody>
 <tr>
-<td><h3 id="twitter-2020">Twitter (2020)</h3></td>
-<td><h3 id="herramienta-interna-sin-controles-de-acceso-130-cuentas-vip-comprometidas">Herramienta interna sin controles de acceso → 130 cuentas VIP comprometidas</h3></td>
+<td><h4 id="twitter-2020">Twitter (2020)</h3></td>
+<td><h4 id="herramienta-interna-sin-controles-de-acceso-130-cuentas-vip-comprometidas">Herramienta interna sin controles de acceso → 130 cuentas VIP comprometidas</h3></td>
 </tr>
 <tr>
-<td><h3 id="peloton-2021">Peloton (2021)</h3></td>
-<td><h3 id="api-sin-autenticación-requerida-datos-de-millones-de-usuarios-expuestos">API sin autenticación requerida → datos de millones de usuarios expuestos</h3></td>
+<td><h4 id="peloton-2021">Peloton (2021)</h3></td>
+<td><h4 id="api-sin-autenticación-requerida-datos-de-millones-de-usuarios-expuestos">API sin autenticación requerida → datos de millones de usuarios expuestos</h3></td>
 </tr>
 <tr>
-<td><h3 id="parler-2021">Parler (2021)</h3></td>
-<td><h3 id="api-sin-rate-limit-ni-orden-de-recursos-scraping-de-70tb-de-datos">API sin rate limit ni orden de recursos → scraping de 70TB de datos</h3></td>
+<td><h4 id="parler-2021">Parler (2021)</h3></td>
+<td><h4 id="api-sin-rate-limit-ni-orden-de-recursos-scraping-de-70tb-de-datos">API sin rate limit ni orden de recursos → scraping de 70TB de datos</h3></td>
 </tr>
 <tr>
-<td><h3 id="facebook-2018">Facebook (2018)</h3></td>
-<td><h3 id="oauth-mal-diseñado-sin-validación-de-estado-50-millones-de-tokens-robados">OAuth mal diseñado sin validación de estado → 50 millones de tokens robados</h3></td>
+<td><h4 id="facebook-2018">Facebook (2018)</h3></td>
+<td><h4 id="oauth-mal-diseñado-sin-validación-de-estado-50-millones-de-tokens-robados">OAuth mal diseñado sin validación de estado → 50 millones de tokens robados</h3></td>
 </tr>
 </tbody>
 </table>
@@ -348,7 +348,7 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 
 ## ✅ Buenas Prácticas DevSecOps
 
-<img src="./media/image4.png" style="width:2.98268in;height:7in" />
+<img src="./images/image007.png"/>
 
 - Security by Design / Security by Default en todas las decisiones arquitectónicas
 
@@ -382,31 +382,31 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 </colgroup>
 <thead>
 <tr>
-<th><h2 id="área-1">Área</h2></th>
-<th><h2 id="configuración-1">Configuración</h2></th>
+<th><h3 id="área-1">Área</h2></th>
+<th><h3 id="configuración-1">Configuración</h2></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h2 id="api-gateway">API Gateway</h2></td>
-<td><h2 id="rate-limiting-por-usuarioip.-cuotas-de-uso.-throttling-diferenciado.-aws-api-gw-kong">Rate limiting por usuario/IP. Cuotas de uso. Throttling diferenciado. AWS API GW / Kong</h2></td>
+<td><h4 id="api-gateway">API Gateway</h2></td>
+<td><h4 id="rate-limiting-por-usuarioip.-cuotas-de-uso.-throttling-diferenciado.-aws-api-gw-kong">Rate limiting por usuario/IP. Cuotas de uso. Throttling diferenciado. AWS API GW / Kong</h2></td>
 </tr>
 <tr>
-<td><h2 id="identity-access">Identity &amp; Access</h2></td>
-<td><h2 id="mfa-obligatorio.-iam-granular-por-recurso.-roles-específicos-por-microservicio.-spiffespire">MFA obligatorio. IAM granular por recurso. Roles específicos por microservicio. SPIFFE/SPIRE</h2></td>
+<td><h4 id="identity-access">Identity &amp; Access</h2></td>
+<td><h4 id="mfa-obligatorio.-iam-granular-por-recurso.-roles-específicos-por-microservicio.-spiffespire">MFA obligatorio. IAM granular por recurso. Roles específicos por microservicio. SPIFFE/SPIRE</h2></td>
 </tr>
 <tr>
-<td><h2 id="iac-seguro">IaC Seguro</h2></td>
-<td><h2 id="checkovtfsec-en-cicd.-políticas-iam-con-acceso-mínimo.-feature-flags-con-controles-de-negocio">Checkov/tfsec en CI/CD. Políticas IAM con acceso mínimo. Feature flags con controles de negocio</h2></td>
+<td><h4 id="iac-seguro">IaC Seguro</h2></td>
+<td><h4 id="checkovtfsec-en-cicd.-políticas-iam-con-acceso-mínimo.-feature-flags-con-controles-de-negocio">Checkov/tfsec en CI/CD. Políticas IAM con acceso mínimo. Feature flags con controles de negocio</h2></td>
 </tr>
 <tr>
-<td><h2 id="zero-trust">Zero Trust</h2></td>
-<td><h2 id="mtls-entre-microservicios.-jwt-con-expiración-corta.-verificación-continua-de-identidad-istio-envoy">mTLS entre microservicios. JWT con expiración corta. Verificación continua de identidad (Istio, Envoy)</h2></td>
+<td><h4 id="zero-trust">Zero Trust</h2></td>
+<td><h4 id="mtls-entre-microservicios.-jwt-con-expiración-corta.-verificación-continua-de-identidad-istio-envoy">mTLS entre microservicios. JWT con expiración corta. Verificación continua de identidad (Istio, Envoy)</h3></td>
 </tr>
 </tbody>
 </table>
 
-<img src="./media/image5.png" style="width:3.31286in;height:5in" />
+<img src="./images/image009.png"/>
 
 ## 🔒 Controles de Seguridad
 
@@ -419,48 +419,48 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 </colgroup>
 <thead>
 <tr>
-<th><h2 id="control-1">Control</h2></th>
-<th><h2 id="tipo-1">Tipo</h2></th>
-<th><h2 id="herramienta-1">Herramienta</h2></th>
-<th><h2 id="prioridad-1">Prioridad</h2></th>
+<th><h3 id="control-1">Control</h2></th>
+<th><h3 id="tipo-1">Tipo</h2></th>
+<th><h3 id="herramienta-1">Herramienta</h2></th>
+<th><h3 id="prioridad-1">Prioridad</h2></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h2 id="threat-modeling-en-sprint">Threat Modeling en sprint</h2></td>
-<td><h2 id="diseño">Diseño</h2></td>
-<td><h2 id="owasp-threat-dragon-stride">OWASP Threat Dragon, STRIDE</h2></td>
-<td><h2 id="crítico-2">CRÍTICO</h2></td>
+<td><h4 id="threat-modeling-en-sprint">Threat Modeling en sprint</h2></td>
+<td><h4 id="diseño">Diseño</h2></td>
+<td><h4 id="owasp-threat-dragon-stride">OWASP Threat Dragon, STRIDE</h2></td>
+<td><h4 id="crítico-2">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="security-architecture-review">Security Architecture Review</h2></td>
-<td><h2 id="diseño-1">Diseño</h2></td>
-<td><h2 id="checklist-interno-adrs">Checklist interno, ADRs</h2></td>
-<td><h2 id="crítico-3">CRÍTICO</h2></td>
+<td><h4 id="security-architecture-review">Security Architecture Review</h2></td>
+<td><h4 id="diseño-1">Diseño</h2></td>
+<td><h4 id="checklist-interno-adrs">Checklist interno, ADRs</h2></td>
+<td><h4 id="crítico-3">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="zero-trust-mtls">Zero Trust + mTLS</h2></td>
-<td><h2 id="implementación">Implementación</h2></td>
-<td><h2 id="istio-envoy-spiffe">Istio, Envoy, SPIFFE</h2></td>
-<td><h2 id="alto-3">ALTO</h2></td>
+<td><h4 id="zero-trust-mtls">Zero Trust + mTLS</h2></td>
+<td><h4 id="implementación">Implementación</h2></td>
+<td><h4 id="istio-envoy-spiffe">Istio, Envoy, SPIFFE</h2></td>
+<td><h4 id="alto-3">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="iac-security-scan">IaC Security Scan</h2></td>
-<td><h2 id="cicd">CI/CD</h2></td>
-<td><h2 id="checkov-tfsec-terrascan">Checkov, tfsec, terrascan</h2></td>
-<td><h2 id="alto-4">ALTO</h2></td>
+<td><h4 id="iac-security-scan">IaC Security Scan</h2></td>
+<td><h4 id="cicd">CI/CD</h2></td>
+<td><h4 id="checkov-tfsec-terrascan">Checkov, tfsec, terrascan</h2></td>
+<td><h4 id="alto-4">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="api-rate-limiting">API Rate Limiting</h2></td>
-<td><h2 id="runtime">Runtime</h2></td>
-<td><h2 id="aws-api-gw-kong-nginx">AWS API GW, Kong, Nginx</h2></td>
-<td><h2 id="alto-5">ALTO</h2></td>
+<td><h4 id="api-rate-limiting">API Rate Limiting</h2></td>
+<td><h4 id="runtime">Runtime</h2></td>
+<td><h4 id="aws-api-gw-kong-nginx">AWS API GW, Kong, Nginx</h2></td>
+<td><h4 id="alto-5">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="penetration-testing">Penetration Testing</h2></td>
-<td><h2 id="pre-producción">Pre-producción</h2></td>
-<td><h2 id="manual-dast-automatizado">Manual + DAST automatizado</h2></td>
-<td><h2 id="medio-1">MEDIO</h2></td>
+<td><h4 id="penetration-testing">Penetration Testing</h2></td>
+<td><h4 id="pre-producción">Pre-producción</h2></td>
+<td><h4 id="manual-dast-automatizado">Manual + DAST automatizado</h2></td>
+<td><h4 id="medio-1">MEDIO</h2></td>
 </tr>
 </tbody>
 </table>
@@ -475,10 +475,10 @@ El atacante aprovecha flujos lógicos incorrectos, ausencia de controles de nego
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><strong>A09</strong></th>
-<th><p><strong>Fallos de alertas y registros de seguridad</strong></p>
+<th style="text-align: center;"><H1>A09</th>
+<th><p><H1>Fallos de alertas y registros de seguridad</p>
 <p>El silencio es la peor respuesta ante un ataque</p></th>
-<th style="text-align: center;"><strong>⚠ MEDIO-ALTO</strong></th>
+<th style="text-align: center;"><H1>⚠ MEDIO-ALTO</th>
 </tr>
 </thead>
 <tbody>
@@ -519,7 +519,7 @@ El atacante explota el sistema sin que se generen registros auditables ni alerta
 
 - Mayor daño financiero y reputacional acumulado por detección tardía
 
-  <img src="./media/image6.png" style="width:6.71217in;height:0.7in" />
+  <img src="./images/image010.png"/>
 
 ## ⚔️ Métodos de Explotación
 
@@ -544,26 +544,26 @@ El atacante explota el sistema sin que se generen registros auditables ni alerta
 </colgroup>
 <thead>
 <tr>
-<th><h3 id="caso-año-2">Caso / Año</h3></th>
-<th><h3 id="tiempo-sin-detección-e-impacto">Tiempo sin Detección e Impacto</h3></th>
+<th><h4 id="caso-año-2">Caso / Año</h3></th>
+<th><h4 id="tiempo-sin-detección-e-impacto">Tiempo sin Detección e Impacto</h3></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h3 id="solarwinds-2020">SolarWinds (2020)</h3></td>
-<td><h3 id="meses-sin-detección-18000-organizaciones-comprometidas-globalmente">9 meses sin detección → 18,000 organizaciones comprometidas globalmente</h3></td>
+<td><h4 id="solarwinds-2020">SolarWinds (2020)</h3></td>
+<td><h4 id="meses-sin-detección-18000-organizaciones-comprometidas-globalmente">9 meses sin detección → 18,000 organizaciones comprometidas globalmente</h3></td>
 </tr>
 <tr>
-<td><h3 id="marriott-2018">Marriott (2018)</h3></td>
-<td><h3 id="brecha-activa-4-años-500-millones-de-registros-de-huéspedes-expuestos">Brecha activa 4 años → 500 millones de registros de huéspedes expuestos</h3></td>
+<td><h4 id="marriott-2018">Marriott (2018)</h3></td>
+<td><h4 id="brecha-activa-4-años-500-millones-de-registros-de-huéspedes-expuestos">Brecha activa 4 años → 500 millones de registros de huéspedes expuestos</h3></td>
 </tr>
 <tr>
-<td><h3 id="yahoo-2013-2016">Yahoo (2013-2016)</h3></td>
-<td><h3 id="detectado-3-años-después-3000-millones-de-cuentas-afectadas">Detectado 3 años después → 3,000 millones de cuentas afectadas</h3></td>
+<td><h4 id="yahoo-2013-2016">Yahoo (2013-2016)</h3></td>
+<td><h4 id="detectado-3-años-después-3000-millones-de-cuentas-afectadas">Detectado 3 años después → 3,000 millones de cuentas afectadas</h3></td>
 </tr>
 <tr>
-<td><h3 id="uber-2016">Uber (2016)</h3></td>
-<td><h3 id="brecha-oculta-1-año-sin-alertas-activas-datos-de-57m-usuarios">Brecha oculta 1 año sin alertas activas → datos de 57M usuarios</h3></td>
+<td><h4 id="uber-2016">Uber (2016)</h3></td>
+<td><h4 id="brecha-oculta-1-año-sin-alertas-activas-datos-de-57m-usuarios">Brecha oculta 1 año sin alertas activas → datos de 57M usuarios</h3></td>
 </tr>
 </tbody>
 </table>
@@ -606,37 +606,37 @@ El atacante explota el sistema sin que se generen registros auditables ni alerta
 
 - Sincronización NTP en todos los sistemas para correlación correcta de eventos
 
-  <img src="./media/image7.png" style="width:2.80282in;height:5in" />
+  <img src="./images/image012.png"/>
 
 ## ⚙️ Configuraciones Recomendadas
 
-<table style="width:92%;">
+<table style="width:72%;">
 <colgroup>
 <col style="width: 18%" />
 <col style="width: 73%" />
 </colgroup>
 <thead>
 <tr>
-<th><h2 id="servicio">Servicio</h2></th>
-<th><h2 id="configuración-2">Configuración</h2></th>
+<th><h3 id="servicio">Servicio</h2></th>
+<th><h3 id="configuración-2">Configuración</h2></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h2 id="aws-cloudtrail">AWS CloudTrail</h2></td>
-<td><h2 id="activar-en-todas-las-regiones.-logs-a-s3-con-object-lock-worm.-integrar-con-cloudwatch">Activar en todas las regiones. Logs a S3 con Object Lock (WORM). Integrar con CloudWatch</h2></td>
+<td><h4 id="aws-cloudtrail">AWS CloudTrail</h2></td>
+<td><h4 id="activar-en-todas-las-regiones.-logs-a-s3-con-object-lock-worm.-integrar-con-cloudwatch">Activar en todas las regiones. Logs a S3 con Object Lock (WORM). Integrar con CloudWatch</h2></td>
 </tr>
 <tr>
-<td><h2 id="aws-guardduty">AWS GuardDuty</h2></td>
-<td><h2 id="habilitar-threat-detection.-integrar-con-security-hub-para-correlación-centralizada">Habilitar threat detection. Integrar con Security Hub para correlación centralizada</h2></td>
+<td><h4 id="aws-guardduty">AWS GuardDuty</h2></td>
+<td><h4 id="habilitar-threat-detection.-integrar-con-security-hub-para-correlación-centralizada">Habilitar threat detection. Integrar con Security Hub para correlación centralizada</h2></td>
 </tr>
 <tr>
-<td><h2 id="alarmas-cloudwatch">Alarmas CloudWatch</h2></td>
-<td><h2 id="alerta-inmediata-ante-uso-de-cuenta-root-threshold1-period300s-vía-sns">Alerta inmediata ante uso de cuenta root (threshold=1, period=300s) vÍa SNS</h2></td>
+<td><h4 id="alarmas-cloudwatch">Alarmas CloudWatch</h2></td>
+<td><h4 id="alerta-inmediata-ante-uso-de-cuenta-root-threshold1-period300s-vía-sns">Alerta inmediata ante uso de cuenta root (threshold=1, period=300s) vÍa SNS</h2></td>
 </tr>
 <tr>
-<td><h2 id="siem-soar">SIEM / SOAR</h2></td>
-<td><h2 id="splunkelk-con-connectors-cloud.-playbooks-automáticos-ante-incidentes-críticos-detectados">Splunk/ELK con connectors cloud. Playbooks automáticos ante incidentes críticos detectados</h2></td>
+<td><h4 id="siem-soar">SIEM / SOAR</h2></td>
+<td><h4 id="splunkelk-con-connectors-cloud.-playbooks-automáticos-ante-incidentes-críticos-detectados">Splunk/ELK con connectors cloud. Playbooks automáticos ante incidentes críticos detectados</h2></td>
 </tr>
 </tbody>
 </table>
@@ -654,56 +654,56 @@ El atacante explota el sistema sin que se generen registros auditables ni alerta
 </colgroup>
 <thead>
 <tr>
-<th><h2 id="control-2">Control</h2></th>
-<th><h2 id="tipo-2">Tipo</h2></th>
-<th><h2 id="herramienta-2">Herramienta</h2></th>
-<th><h2 id="prioridad-2">Prioridad</h2></th>
+<th><h3 id="control-2">Control</h2></th>
+<th><h3 id="tipo-2">Tipo</h2></th>
+<th><h3 id="herramienta-2">Herramienta</h2></th>
+<th><h3 id="prioridad-2">Prioridad</h2></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><h2 id="siem-centralizado">SIEM centralizado</h2></td>
-<td><h2 id="detectivo-2">Detectivo</h2></td>
-<td><h2 id="splunk-elk-azure-sentinel">Splunk, ELK, Azure Sentinel</h2></td>
-<td><h2 id="crítico-4">CRÍTICO</h2></td>
+<td><h4 id="siem-centralizado">SIEM centralizado</h2></td>
+<td><h4 id="detectivo-2">Detectivo</h2></td>
+<td><h4 id="splunk-elk-azure-sentinel">Splunk, ELK, Azure Sentinel</h2></td>
+<td><h4 id="crítico-4">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="cloudtrail-guardduty">CloudTrail + GuardDuty</h2></td>
-<td><h2 id="detectivo-3">Detectivo</h2></td>
-<td><h2 id="aws-nativo-azure-defender">AWS nativo, Azure Defender</h2></td>
-<td><h2 id="crítico-5">CRÍTICO</h2></td>
+<td><h4 id="cloudtrail-guardduty">CloudTrail + GuardDuty</h2></td>
+<td><h4 id="detectivo-3">Detectivo</h2></td>
+<td><h4 id="aws-nativo-azure-defender">AWS nativo, Azure Defender</h2></td>
+<td><h4 id="crítico-5">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="alertas-en-tiempo-real">Alertas en tiempo real</h2></td>
-<td><h2 id="reactivo">Reactivo</h2></td>
-<td><h2 id="pagerduty-opsgenie-sns">PagerDuty, OpsGenie, SNS</h2></td>
-<td><h2 id="crítico-6">CRÍTICO</h2></td>
+<td><h4 id="alertas-en-tiempo-real">Alertas en tiempo real</h2></td>
+<td><h4 id="reactivo">Reactivo</h2></td>
+<td><h4 id="pagerduty-opsgenie-sns">PagerDuty, OpsGenie, SNS</h2></td>
+<td><h4 id="crítico-6">CRÍTICO</h2></td>
 </tr>
 <tr>
-<td><h2 id="logs-inmutables-worm">Logs inmutables (WORM)</h2></td>
-<td><h2 id="preventivo-4">Preventivo</h2></td>
-<td><h2 id="s3-object-lock-azure-blob">S3 Object Lock, Azure Blob</h2></td>
-<td><h2 id="alto-6">ALTO</h2></td>
+<td><h4 id="logs-inmutables-worm">Logs inmutables (WORM)</h2></td>
+<td><h4 id="preventivo-4">Preventivo</h2></td>
+<td><h4 id="s3-object-lock-azure-blob">S3 Object Lock, Azure Blob</h2></td>
+<td><h4 id="alto-6">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="soar-automatizado">SOAR automatizado</h2></td>
-<td><h2 id="reactivo-1">Reactivo</h2></td>
-<td><h2 id="splunk-soar-demistoxsoar">Splunk SOAR, Demisto/XSOAR</h2></td>
-<td><h2 id="alto-7">ALTO</h2></td>
+<td><h4 id="soar-automatizado">SOAR automatizado</h2></td>
+<td><h4 id="reactivo-1">Reactivo</h2></td>
+<td><h4 id="splunk-soar-demistoxsoar">Splunk SOAR, Demisto/XSOAR</h2></td>
+<td><h4 id="alto-7">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="structured-logging">Structured Logging</h2></td>
-<td><h2 id="preventivo-5">Preventivo</h2></td>
-<td><h2 id="structlog-loguru-serilog">structlog, Loguru, Serilog</h2></td>
-<td><h2 id="alto-8">ALTO</h2></td>
+<td><h4 id="structured-logging">Structured Logging</h2></td>
+<td><h4 id="preventivo-5">Preventivo</h2></td>
+<td><h4 id="structlog-loguru-serilog">structlog, Loguru, Serilog</h2></td>
+<td><h4 id="alto-8">ALTO</h2></td>
 </tr>
 <tr>
-<td><h2 id="log-retention-policy">Log Retention Policy</h2></td>
-<td><h2 id="preventivo-6">Preventivo</h2></td>
-<td><h2 id="aws-config-rules-azure-policy">AWS Config Rules, Azure Policy</h2></td>
-<td><h2 id="medio-2">MEDIO</h2></td>
+<td><h4 id="log-retention-policy">Log Retention Policy</h2></td>
+<td><h4 id="preventivo-6">Preventivo</h2></td>
+<td><h4 id="aws-config-rules-azure-policy">AWS Config Rules, Azure Policy</h2></td>
+<td><h4 id="medio-2">MEDIO</h2></td>
 </tr>
 </tbody>
 </table>
 
-## 
+##
